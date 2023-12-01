@@ -1,0 +1,5 @@
+Cargo.lock
+/target
+/day-00
+input.txt
+.vscode
