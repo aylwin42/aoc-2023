@@ -1,0 +1,24 @@
+[package]
+name = "day-02"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.4.10", features = [ "derive" ] }
+
+[lints]
+workspace = true
+
+[lib]
+name = "day02"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "day02-stage1"
+path = "src/bin/stage1.rs"
+
+[[bin]]
+name = "day02-stage2"
+path = "src/bin/stage2.rs"
