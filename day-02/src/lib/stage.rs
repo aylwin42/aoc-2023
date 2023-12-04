@@ -86,7 +86,8 @@ pub fn two(input: &InputData) -> Result<OutputData,Error> {
 
 #[derive(Debug)]
 pub enum Error {
-    IO(io::Error)
+    IO(io::Error),
+    ParseError
 }
 
 impl From<io::Error> for Error {
